@@ -4,7 +4,7 @@ Spotify like website with basic CRUD and song listings using Django. The screens
 Steps to run locally:
 You should have Python3 installed on your computer
 
-1. Run `pip3 install -r "requirements.txt"`. This will install all the dependencies
+1. Run `pip3 install -r requirements.txt`. This will install all the dependencies
 2. Run `Python3 manage.py makemigrations`
 3. Run `Python3 manage.py migrate`
 4. Run `Python3 manage.py createsuperuser` and provide relevant information. This will provide access to admin panel at /admin route.
