@@ -66,7 +66,7 @@
                         <br>
                         <button type="submit">submit</button>
                     </form>
-                    Average rating : {{ song.avg_rating }}
+                    Average rating : {{ song.avg_rating|floatformat:"2" }}
                 </td>
                 </tr>
                 {% endfor %}
@@ -89,7 +89,7 @@
                 <td>{{ artist.name }}</td>
                 <td>{{ artist.DOB }}</td>
                 <td>{{ artist.song_set.all|join:" | " }}</td>
-                <td>{{ artist.avg_rating }}</td>
+                <td>{{ artist.avg_rating|floatformat:"2" }}</td>
                 </tr>
                 {% endfor %}
             </tbody>
